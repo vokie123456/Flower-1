@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="tmD-RM-WPZ" customClass="HPTabBarView">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0p-Cg-W84" customClass="HPTabBarButton">
+                    <rect key="frame" x="0.0" y="0.0" width="74" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="74" id="8CG-vK-egS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
+                    <state key="normal" title="好习惯" image="圆角方框">
+                        <color key="titleColor" red="0.33333334329999997" green="0.33333334329999997" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="disabled" image="圆角方框_highlight">
+                        <color key="titleColor" red="0.96078431369999995" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" title="好习惯" image="圆角方框_highlight">
+                        <color key="titleColor" red="0.96078431369999995" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted" image="圆角方框_highlight">
+                        <color key="titleColor" red="0.96078431369999995" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectItem:" destination="tmD-RM-WPZ" eventType="touchUpInside" id="NEN-Qi-atH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQ6-0V-q9g" customClass="HPTabBarButton">
+                    <rect key="frame" x="228" y="0.0" width="74" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="74" id="Uaa-Vu-oMi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <state key="normal" title="愿望池" image="心">
+                        <color key="titleColor" red="0.33333334329999997" green="0.33333334329999997" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="disabled" image="心_highlight">
+                        <color key="titleColor" red="0.96078431369999995" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" title="愿望池" image="心_highlight">
+                        <color key="titleColor" red="0.96078431369999995" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted" image="心_highlight">
+                        <color key="titleColor" red="0.96078431369999995" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectItem:" destination="tmD-RM-WPZ" eventType="touchUpInside" id="2Jq-Dd-2qM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3A-ox-4et" customClass="HPTabBarButton">
+                    <rect key="frame" x="302" y="0.0" width="74" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="74" id="0Tt-v7-O1U"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <state key="normal" title="更多" image="更多">
+                        <color key="titleColor" red="0.33333334329999997" green="0.33333334329999997" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="disabled" image="更多_highlight">
+                        <color key="titleColor" red="0.96078431369999995" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" image="更多_highlight">
+                        <color key="titleColor" red="0.96078431369999995" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted" image="更多_highlight">
+                        <color key="titleColor" red="0.96078431369999995" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectItem:" destination="tmD-RM-WPZ" eventType="touchUpInside" id="rA6-jz-Ntk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cX-tA-TGL" customClass="HPTabBarButton">
+                    <rect key="frame" x="74" y="0.0" width="74" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="74" id="pdT-jT-sHW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <state key="normal" title="记录" image="照片">
+                        <color key="titleColor" red="0.33333334329999997" green="0.33333334329999997" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="disabled" image="照片_highlight">
+                        <color key="titleColor" red="0.96078431369999995" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" title="记录" image="照片_highlight">
+                        <color key="titleColor" red="0.96078431369999995" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted" title="记录" image="照片_highlight">
+                        <color key="titleColor" red="0.96078431369999995" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectItem:" destination="tmD-RM-WPZ" eventType="touchUpInside" id="MCX-Qo-VmR"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doc-bv-NkG" customClass="UICountingLabel">
+                    <rect key="frame" x="156" y="28" width="64" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="Yp1-ls-5m2"/>
+                        <constraint firstAttribute="width" constant="64" id="nsg-Cj-qGC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAb-i8-fUl">
+                    <rect key="frame" x="148" y="-41" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="LaY-xG-UQL"/>
+                    </constraints>
+                    <state key="normal" image="6"/>
+                    <connections>
+                        <action selector="showTheButton:" destination="tmD-RM-WPZ" eventType="touchUpInside" id="L0F-Ma-mew"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="A3A-ox-4et" firstAttribute="baseline" secondItem="YQ6-0V-q9g" secondAttribute="firstBaseline" id="0Gc-lJ-Oqe"/>
+                <constraint firstItem="g0p-Cg-W84" firstAttribute="leading" secondItem="tmD-RM-WPZ" secondAttribute="leading" id="0c1-JO-TD4"/>
+                <constraint firstItem="doc-bv-NkG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0cX-tA-TGL" secondAttribute="trailing" constant="8" symbolic="YES" id="1VA-iN-Pk3"/>
+                <constraint firstItem="A3A-ox-4et" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YQ6-0V-q9g" secondAttribute="trailing" id="2j9-fk-E83"/>
+                <constraint firstItem="zAb-i8-fUl" firstAttribute="leading" secondItem="0cX-tA-TGL" secondAttribute="trailing" id="33M-eX-C14"/>
+                <constraint firstItem="0cX-tA-TGL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="g0p-Cg-W84" secondAttribute="trailing" id="6Sj-oE-Hr6"/>
+                <constraint firstItem="g0p-Cg-W84" firstAttribute="top" secondItem="0cX-tA-TGL" secondAttribute="top" id="Dc1-Dr-trn"/>
+                <constraint firstItem="0cX-tA-TGL" firstAttribute="baseline" secondItem="YQ6-0V-q9g" secondAttribute="baseline" id="IEf-h3-sq0"/>
+                <constraint firstAttribute="trailing" secondItem="A3A-ox-4et" secondAttribute="trailing" id="JZo-Ij-Yj8"/>
+                <constraint firstItem="g0p-Cg-W84" firstAttribute="baseline" secondItem="0cX-tA-TGL" secondAttribute="firstBaseline" id="Kxh-bo-aQ6"/>
+                <constraint firstItem="YQ6-0V-q9g" firstAttribute="top" secondItem="A3A-ox-4et" secondAttribute="top" id="MIR-Wv-IVy"/>
+                <constraint firstItem="g0p-Cg-W84" firstAttribute="top" secondItem="tmD-RM-WPZ" secondAttribute="top" id="QPY-rZ-pEF"/>
+                <constraint firstItem="zAb-i8-fUl" firstAttribute="top" secondItem="tmD-RM-WPZ" secondAttribute="top" constant="-41" id="Tld-1B-iSi"/>
+                <constraint firstItem="doc-bv-NkG" firstAttribute="centerX" secondItem="tmD-RM-WPZ" secondAttribute="centerX" id="UYv-Jf-O6g"/>
+                <constraint firstItem="0cX-tA-TGL" firstAttribute="top" secondItem="YQ6-0V-q9g" secondAttribute="top" id="VzJ-Ty-NBP"/>
+                <constraint firstAttribute="bottom" secondItem="g0p-Cg-W84" secondAttribute="bottom" id="ZrX-YL-hql"/>
+                <constraint firstItem="YQ6-0V-q9g" firstAttribute="baseline" secondItem="A3A-ox-4et" secondAttribute="firstBaseline" id="dhR-s0-2Ko"/>
+                <constraint firstAttribute="bottom" secondItem="zAb-i8-fUl" secondAttribute="bottom" constant="10" id="jvI-hg-hcW"/>
+                <constraint firstItem="YQ6-0V-q9g" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="doc-bv-NkG" secondAttribute="trailing" constant="8" symbolic="YES" id="l4H-a8-l04"/>
+                <constraint firstItem="zAb-i8-fUl" firstAttribute="centerX" secondItem="doc-bv-NkG" secondAttribute="centerX" id="lSG-9k-hLA"/>
+                <constraint firstItem="0cX-tA-TGL" firstAttribute="bottom" secondItem="doc-bv-NkG" secondAttribute="bottom" id="sRf-OL-NlG"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="countingLb" destination="doc-bv-NkG" id="UHO-wo-UkC"/>
+                <outlet property="redFlower" destination="zAb-i8-fUl" id="C8G-YU-NcV"/>
+                <outletCollection property="items" destination="g0p-Cg-W84" id="ngp-Gq-l3s"/>
+                <outletCollection property="items" destination="0cX-tA-TGL" id="XMc-Zx-jSS"/>
+                <outletCollection property="items" destination="YQ6-0V-q9g" id="bkX-8N-YMt"/>
+                <outletCollection property="items" destination="A3A-ox-4et" id="X4x-Qc-ObC"/>
+            </connections>
+            <point key="canvasLocation" x="-24" y="130.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="6" width="64" height="64"/>
+        <image name="圆角方框" width="24" height="24"/>
+        <image name="圆角方框_highlight" width="24" height="24"/>
+        <image name="心" width="24" height="24"/>
+        <image name="心_highlight" width="24" height="24"/>
+        <image name="更多" width="32" height="32"/>
+        <image name="更多_highlight" width="32" height="32"/>
+        <image name="照片" width="24" height="24"/>
+        <image name="照片_highlight" width="24" height="24"/>
+    </resources>
+</document>

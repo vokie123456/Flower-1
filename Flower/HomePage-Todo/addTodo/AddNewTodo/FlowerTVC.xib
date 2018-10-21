@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="116" id="KGk-i7-Jjw" customClass="FlowerTVC">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="377" height="115.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每次完成可获得红花数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJj-KN-6XG">
+                        <rect key="frame" x="44" y="0.0" width="288" height="48"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="Qhi-8s-ypy">
+                        <rect key="frame" x="96" y="53" width="50" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Ted-Vs-PBA"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="fill" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iFd-RC-Lkq">
+                        <rect key="frame" x="191" y="56" width="86" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43" id="Rcf-ZI-Kyv"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="iFd-RC-Lkq" secondAttribute="trailing" constant="84" id="Mgm-AJ-xhG"/>
+                    <constraint firstItem="AJj-KN-6XG" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="YPo-Lh-GO3"/>
+                    <constraint firstItem="AJj-KN-6XG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="28" id="ZRT-km-pSl"/>
+                    <constraint firstItem="Qhi-8s-ypy" firstAttribute="centerY" secondItem="iFd-RC-Lkq" secondAttribute="centerY" id="aX8-Tt-2AL"/>
+                    <constraint firstItem="Qhi-8s-ypy" firstAttribute="top" secondItem="AJj-KN-6XG" secondAttribute="bottom" constant="5" id="cNL-YS-cZN"/>
+                    <constraint firstItem="iFd-RC-Lkq" firstAttribute="leading" secondItem="Qhi-8s-ypy" secondAttribute="trailing" constant="45" id="fQY-te-WpN"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Qhi-8s-ypy" secondAttribute="bottom" constant="3" id="uF2-3F-q4h"/>
+                    <constraint firstItem="iFd-RC-Lkq" firstAttribute="top" secondItem="AJj-KN-6XG" secondAttribute="bottom" constant="8" symbolic="YES" id="xQJ-nQ-Igb"/>
+                    <constraint firstItem="Qhi-8s-ypy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="80" id="xbm-TM-Gqd"/>
+                    <constraint firstItem="AJj-KN-6XG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yAh-Ne-FPa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="FlowerNumberTF" destination="iFd-RC-Lkq" id="9Sq-Ym-zHg"/>
+            </connections>
+            <point key="canvasLocation" x="-180.5" y="52"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="6" width="64" height="64"/>
+    </resources>
+</document>
